@@ -1,3 +1,9 @@
+import requests
+g = requests.get
+def get(*a,**kw):
+	print(a)
+	return g(*a,**kw)
+requests.get = get
 _author = ('ngocuyencoder','https://www.facebook.com/datishnu1907','https://t.me/huynhngocuyenn')
 _pymeomeo_version = ('PREMIUM','User : 3.12','main')
 _pymeomeo = vars(globals()['__builtins__'])
